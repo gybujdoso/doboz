@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.doboz {
+    width: 200px;
+    margin: 100px auto 1000px auto;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.doboz a {
+    text-decoration: none;
+    color: #0d9ac7;
+}
+
+.kep {
+    background-color: white;
+}
+
+.doboz h2 {
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 10px 0;
+
+}
+
+.doboz p {
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #0d9ac7;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+h1 {
+    background-color: #0d9ac7;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* csík maradjon a képernyőn */
+    top: 0; /* legyen fent */
+    left: 0; /* és töltse ki a teret balról */
+    right: 0; /* és töltse ki a teret jobbra */
+    z-index: 100;
+}
+
+.kep {
+    position: relative;
+}
+
+.kep span {
+    position: absolute;
+}
+
+.icon-star {
+    left: 5px;
+    top: 5px;
+    color: lightgray;
+
+}
+
+
+.akcio {
+    right: 5px;
+    bottom: 5px;
+    background-color: green;
+    color: white;
+    font-size: 0.6rem;
+    padding: 3px 10px;
+    display: inline-block; /* mert inline elemeken a felső-alsó padding nem látszik, így látszani fog */
+}
+
+#kedvenc:checked+label span { /*átnézni ezt*/
+    color: orange;
+}
+
+#kedvenc {
+    display: none;
+}
+
+.icon-basket {
+    margin-right: 3px;
+}
