@@ -13,7 +13,7 @@ body {
 }
 
 .doboz {
-    width: 200px;
+    width: 180px;
     margin: 100px auto 1000px auto;
     text-align: center;
     background-color: #f4f4f4;
@@ -76,17 +76,20 @@ h1 {
     left: 5px;
     top: 5px;
     color: lightgray;
-
+    opacity: 0;
 }
 
+.icon-star:hover {
+    opacity: 1;
+}
 
 .akcio {
     right: 5px;
     bottom: 5px;
     background-color: green;
     color: white;
-    font-size: 0.6rem;
-    padding: 3px 10px;
+    font-size: 0.8rem;
+    padding: 4px 6px;
     display: inline-block; /* mert inline elemeken a felső-alsó padding nem látszik, így látszani fog */
 }
 
